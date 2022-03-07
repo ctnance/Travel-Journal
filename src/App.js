@@ -1,5 +1,11 @@
+import Entries from "./components/Entries";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Entries />
+    </>
+  );
 }
 
 export default App;
