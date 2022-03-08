@@ -1,4 +1,5 @@
 :root {
+  --red-header: #f55a5a;
   --medium-gray: #918e9b;
   --dark-font-color: #2b283a;
   --light-gray: #f5f5f5;
@@ -33,11 +34,31 @@ a:active {
   color: var(--medium-gray);
 }
 
+header {
+  background-color: var(--red-header);
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1em 0;
+}
+
+header h1 {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+header img {
+  width: 3.5em;
+  padding-right: 1em;
+}
+
 .entries-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 3em;
 }
 
 .entries-container .entry-card:last-child {
