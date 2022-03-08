@@ -5,15 +5,16 @@ function Entry(props) {
   let data = props.data;
   return (
     <section className="entry-card">
-      <div className="entry-card--location-img">
-        <img src={data.imageUrl} alt={data.title} />
+      <div className="entry-card--title-img-container">
+        <img className="entry-card--title-img" src={data.imageUrl} alt={data.title} />
       </div>
       <div className="entry-card--travel-details">
-        <div>
-          <img src={LocationIcon} alt="" />
-          <span>
-            {data.location} <a href={data.googleMapsUrl}>View on Google Maps</a>
-          </span>
+        <div className="entry-card--location-row">
+          <img className="entry-card--location-icon" src={LocationIcon} alt="" />
+          <span className="entry-card--location">{data.location}</span>{" "}
+          <a href={data.googleMapsUrl} target="_blank">
+            View on Google Maps
+          </a>
         </div>
         <h2 className="entry-card--title">{data.title}</h2>
         <p className="entry-card--travel-dates">

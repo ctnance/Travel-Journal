@@ -7,7 +7,7 @@ function Entries() {
     return <Entry id={entry.id} data={entry} />;
   });
   console.log(data);
-  return <div>{entries}</div>;
+  return <div className="entries-container">{entries}</div>;
 }
 
 export default Entries;
